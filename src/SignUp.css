@@ -1,0 +1,68 @@
+.SignUp {
+    display: flex;
+    font-family: Lucida Sans Unicode;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    font-family: Lucida Sans Unicode;
+    color: rgb(235, 82, 11);
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1500px;
+    border: 3px solid rgb(235, 82, 11);
+    border-radius: 50px;
+    padding: 20px;
+  }
+  p {
+    font-family: Lucida Sans Unicode;
+    border-radius: 50px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    width: 500px;
+    border: 1px solid #ddd;
+    font-family: Lucida Sans Unicode;
+    padding: 20px;
+  }
+  
+  label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    font-family: Lucida Sans Unicode;
+  }
+  
+  input {
+    padding: 10px;
+    margin-top: 5px;
+    font-size: 1rem;
+    border-radius: 50px;
+    border: 1px solid #ccc;
+    font-family: Lucida Sans Unicode;
+  }
+  
+  button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border-radius: 50px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-family: Lucida Sans Unicode;
+  }
+  
+  button:hover {
+    background-color: #0069d9;
+  }
+  
