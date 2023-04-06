@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import "./SignUp.css";
 import "./NavBar.js";
+import bkg from './bkg.jpg';
+import headerpic from './headerpic.jpg';
 import NavBar from "./NavBar.js";
 
 function SignUp() {
@@ -20,8 +22,8 @@ function SignUp() {
   };
 
   return (
-    <div>
-      <img src="/images/header_bkg.jpg" alt="header" />
+    <div className="MainPage">
+      <img src={headerpic} className="HeaderPic" alt="header" />
       <NavBar />
       <div className="SignUp">
         <h1>Sign Up</h1>

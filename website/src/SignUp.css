@@ -5,6 +5,12 @@
     align-items: center;
     margin-top: 100px;
   }
+
+.MainPage {
+  background-image: url('./bkg.jpg');
+  /* width: auto; */
+  height: auto;
+}
   
   h1 {
     font-size: 2.5rem;
@@ -64,5 +70,9 @@
   
   button:hover {
     background-color: #0069d9;
+  }
+
+  .HeaderPic {
+    max-width: 100% !important;
   }
   
