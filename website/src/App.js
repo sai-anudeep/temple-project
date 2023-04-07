@@ -3,6 +3,7 @@ import "./SignUp.css";
 import "./NavBar.js";
 import bkg from './bkg.jpg';
 import headerpic from './headerpic.jpg';
+import displaypic from './displaypic.png';
 import NavBar from "./NavBar.js";
 
 function SignUp() {
@@ -23,7 +24,7 @@ function SignUp() {
 
   return (
     <div className="MainPage">
-      <img src={headerpic} className="HeaderPic" alt="header" />
+      <img src={displaypic} className="HeaderPic" alt="header" />
       <NavBar />
       <div className="SignUp">
         <h1>Sign Up</h1>
