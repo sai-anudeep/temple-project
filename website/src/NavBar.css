@@ -1,19 +1,41 @@
 .NavBar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-  }
-  
-  nav a {
-    color: #333;
-    text-decoration: none;
-    margin-right: 10px;
-  }
-  
-  nav a:hover {
-    text-decoration: underline;
-  }
-  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 33%;
+  font-size: 25px;
+}
+
+nav * {
+  display: inline;
+  text-align: center;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.NavigateLinks {
+  list-style: none;
+}
+
+.NavigateLinks li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.NavigateLinks li a {
+  transition: all 0.2s ease-in-out 0s;
+}
+
+.NavigateLinks li a:hover {
+  color: #800000;
+  border: 2px solid #d4af37;
+  box-shadow: 3px 3px 3px #800000, 3px 3px 3px #d4af37;
+  border-radius: 4px;
+  margin: 10px;
+  padding: 12px;
+}
+

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./SignUp.css";
+// import "./App.scss";
 import "./NavBar.js";
 import bkg from './bkg.jpg';
 import headerpic from './headerpic.jpg';
@@ -24,13 +25,69 @@ function SignUp() {
 
   return (
     <div className="MainPage">
-      <img src={displaypic} className="HeaderPic" alt="header" />
-      <NavBar />
+      <header>
+        <img src={displaypic} className="HeaderPic" alt="header" />
+        <NavBar />
+      </header>
+
+      {/* <div class="form_wrapper">
+        {/* <div class="form_container">
+          <div class="title_container">
+            <h2>Responsive Registration Form</h2>
+          </div>
+          <div class="row clearfix">
+            <div class="">
+              <form onSubmit={handleSubmit}>
+                <div class="input_field"> <span><i aria-hidden="true" class="fa fa-envelope"></i></span>
+                  <input type="email" name="email" placeholder="Email" required />
+                </div>
+                <div class="input_field"> <span><i aria-hidden="true" class="fa fa-lock"></i></span>
+                  <input type="password" name="password" placeholder="Password" required />
+                </div>
+                <div class="input_field"> <span><i aria-hidden="true" class="fa fa-lock"></i></span>
+                  <input type="password" name="password" placeholder="Re-type Password" required />
+                </div>
+                <div class="row clearfix">
+                  <div class="col_half">
+                    <div class="input_field"> <span><i aria-hidden="true" class="fa fa-user"></i></span>
+                      <input type="text" name="name" placeholder="First Name" />
+                    </div>
+                  </div>
+                  <div class="col_half">
+                    <div class="input_field"> <span><i aria-hidden="true" class="fa fa-user"></i></span>
+                      <input type="text" name="name" placeholder="Last Name" required />
+                    </div>
+                  </div>
+                </div>
+                  <div class="input_field select_option">
+                    <select>
+                      <option>Select a country</option>
+                      <option>Option 1</option>
+                      <option>Option 2</option>
+                    </select>
+                    <div class="select_arrow"></div>
+                  </div>
+                  <div class="input_field checkbox_option">
+                    <input type="checkbox" id="cb1">
+                      <label for="cb1">I agree with terms and conditions</label>
+                    </input>
+                  </div>
+                  <div class="input_field checkbox_option">
+                    <input type="checkbox" id="cb2">
+                      <label for="cb2">I want to receive the newsletter</label>
+                    </input>
+                  </div>
+                  <input class="button" type="submit" value="Register" />
+              </form>
+            </div>
+          </div>
+        </div> */}
+
       <div className="SignUp">
         <h1>Sign Up</h1>
         <form onSubmit={handleSubmit}>
           <label>
-            First Name:
+            <span className="FieldHeader">First Name:</span>
             <input
               type="text"
               value={firstname}
@@ -39,7 +96,7 @@ function SignUp() {
             />
           </label>
           <label>
-            Last Name:
+          <span className="FieldHeader">Last Name:</span>
             <input
               type="text"
               value={lastname}
@@ -48,7 +105,7 @@ function SignUp() {
             />
           </label>
           <label>
-            Pravara : Rushi
+          <span className="FieldHeader">Pravara : Rushi</span>
             <input
               type="text"
               value={pravara}
@@ -57,7 +114,7 @@ function SignUp() {
             />
           </label>
           <label>
-            Pravara : Gothram
+          <span className="FieldHeader">Pravara : Gothram</span>
             <input
               type="text"
               value={gotra}
@@ -66,7 +123,7 @@ function SignUp() {
             />
           </label>
           <label>
-            Email:
+          <span className="FieldHeader">Email:</span>
             <input
               type="email"
               value={email}
@@ -75,7 +132,7 @@ function SignUp() {
             />
           </label>
           <label>
-            Name of the Pathasala:
+          <span className="FieldHeader">Name of the Pathasala:</span>
             <input
               type="text"
               value={pathasalaname}
@@ -84,7 +141,7 @@ function SignUp() {
             />
           </label>
           <label>
-            Location Of the Pathasala:
+          <span className="FieldHeader">Location Of the Pathasala:</span>
             <input
               type="text"
               value={location}
@@ -93,7 +150,7 @@ function SignUp() {
             />
           </label>
           <label>
-            Scope of Education:
+          <span className="FieldHeader">Scope of Education:</span>
             <select value={scope} onChange={(e) => setScope} required>
               <option value="">Select a location</option>
               <option value="Veda">Krishna Yajur Vedam</option>
@@ -110,17 +167,18 @@ function SignUp() {
             </select>
           </label>
           <label>
-            Upload your Certificate to:
+          <span className="FieldHeader">Upload your Certificate to:</span>
             <input
               type="file"
               onChange={(e) => setCerti}
               accept="image/*, application/pdf, .doc, .docx"
             />
           </label>
-
-          <button type="submit">Sign Up</button>
+          <span className="Submit">
+          <button type="submit">Submit</button>
+          </span>
         </form>
-      </div>
+      </div> 
     </div>
   );
 }
